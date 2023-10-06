@@ -51,6 +51,7 @@ i = 1
 # finds HTML div's containing movie titles
 movieList = soup.findAll('div', attrs = {'class': 'lister-item mode-advanced'})
 
+print("Finding movies...")
 # loops through div's with the atrribute of a movie title and displays it in a digestible way
 for div_item in tqdm(movieList):
     div = div_item.find('div', attrs={'class': 'lister-item-content'})
